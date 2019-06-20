@@ -1,0 +1,4 @@
+#km cinsinden girilen değerin mil'e cevrılmesi#
+uzaklık=input("hesaplanacak mesafeyı km cınsınden gırınız:")
+mil=int(uzaklık)/1.6
+print("km cınsınden uzaklıgın mıl degerı:",mil)

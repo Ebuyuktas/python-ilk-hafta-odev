@@ -1,0 +1,17 @@
+#faiz hesaplama programı#
+
+anapara=input("ana para miktarını gırınız:")
+yıl=input("vade suresını yazınız:")
+oran=input("faiz oranını gırını:")
+
+faiz_tutarı=(float(anapara)*int(yıl)*float(oran))/100
+aylık_faız=float(faiz_tutarı)/(12*int(yıl))
+gunluk_faız=float(faiz_tutarı)/(365*int(yıl))
+toplam_miktar=float(anapara)+float(faiz_tutarı)
+
+print("\n","alınacak faiz miktarı:",faiz_tutarı,"\n","alınacak aylık faız:",aylık_faız,"\n","alınacak gunluk faız:",gunluk_faız,"\n","vade sonu toplam para:",toplam_miktar,sep="")
+
+dosya=open("faizHesaplama","w")
+
+print("\n","alınacak faiz miktarı:",faiz_tutarı,"\n","alınacak aylık faız:",aylık_faız,"\n","alınacak gunluk faız:",gunluk_faız,"\n","vade sonu toplam para:",toplam_miktar,sep="",file=dosya)
+dosya.close()

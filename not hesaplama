@@ -1,0 +1,12 @@
+#ogrencı not hesaplama programı#
+
+ısım=input("adınız:")
+soyısım=input("soyadınız:")
+vıze=input("vıze notunuz:")
+fınal=input("fınal notunuz:")
+ders_takıp=input("gırılmeyen ders sayısı:")
+notunuz=((int(vıze))*(3/10)+(int(fınal)*(1/2))+((100-(int(ders_takıp)*5))*2/10))
+print(notunuz)
+dosya=open("ogrenciNotHesaplama","w")
+print(ısım,soyısım,vıze,fınal,ders_takıp,notunuz,file=dosya)
+dosya.close()

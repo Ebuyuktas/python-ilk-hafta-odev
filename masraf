@@ -1,0 +1,14 @@
+#aylık masraf programı#
+
+mutfak=input("aylık mutfak gıderınızı yazınız:")
+egıtım=input("aylık egıtım masrafınızı yazınız:")
+giyim=input("aylık gıysı masrafınızı yazınız:")
+ulasım=input("aylık ulasım gıderınızı yazınız:")
+aylık_gelır=input("maasınız:")
+
+toplam_masraf=int(mutfak)+int(egıtım)+int(giyim)+int(ulasım)
+oran=int(toplam_masraf)/int(aylık_gelır)
+print("\n","aylık gıderınız:",toplam_masraf,"\n","gıderın gelıre oranı:",oran,sep="")
+dosya=open("aylık masraf","w")
+print("\n","aylık gıderınız:",toplam_masraf,"\n","gıderın gelıre oranı:",oran,sep="",file=dosya)
+dosya.close()

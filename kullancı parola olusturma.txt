@@ -1,0 +1,33 @@
+#kurallara uygun username ve parola olusturma#
+
+print("""***lutfen rakam ýcermeyen ve 3-18 karakter uzunlugunda býr kullanýcý adý olusturun.
+***kullanýcý adýný olusturduktan sonra 6-18 karakter uzunlugunda býr parola olusturunuz\n""")
+
+sayý=("0123456789")
+
+
+while True:
+    username=input("kullanýcý adý olusturunuz:")
+    if len(username)<3 or len(username)>18:
+        print("username 3-18 karakter arasý olmalýdýr")
+        continue
+    for a in username:
+        if a in sayý:
+            print("kullanýcý adý rakam ýceremez")
+            break
+    else:
+        break
+        
+while True:
+    parola=input("parola olusturunuz:")
+    if 6>len(parola) or 18<len(parola):
+        print("parola uzunlugu 6-18 arasý olmalýdýr")
+        continue
+    else :
+        break
+    
+print("username:",username,"\n","parola:",parola,sep="")
+dosya=open("odev.txt","w")
+print("username:",username,"\n","parola:",parola,sep="",file=dosya)
+dosya.close()
+

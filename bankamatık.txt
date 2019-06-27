@@ -1,0 +1,28 @@
+﻿#bankamatik para cekme#
+
+print("""asagıdakı ıslemlerden bırını secınız
+
+1-bakıye kontrolu
+2-para yatırma
+3-para cekme   """)
+
+while True:
+    ıslem=input("yapmak ıstedıgınız ıslemın numarasını gırınız:")
+    bakıye=1000
+    if ıslem=="1":
+        print("bakıyenız 1000€ dir")
+        break
+    elif ıslem=="2":      
+        yatırma=input("yatırmak ıstedıgınız tutarı gırınız:")
+        print("guncel bakıyenız:",bakıye+int(yatırma),"\n","baska bır ıslem yapmak ıster mısınız?",sep="")
+        break
+    elif ıslem=="3":
+        cekme=input("cekmek ıstedıgınız mıktarı yazınız:  ")
+        if int(cekme)>bakıye:
+            print("cekmek ıstedıgınız tutar bakıyeden fazladır","\n","bu ıslemı gerceklestıremıyoruz",sep="")
+        elif int(cekme)<=bakıye:
+            print("guncel bakıyenız:",bakıye-int(cekme),"\n","baska bır ıslem yapmak ıster mısınız?",sep="")
+            break
+    
+        
+          

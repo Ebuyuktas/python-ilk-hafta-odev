@@ -1,0 +1,43 @@
+﻿#burç bulma programı#
+
+print("lutfen soruları rakamla cevaplayınız\n")
+dogum_ayı=int(input("hangı ayda dogdunuz?:"))
+dogum_gun=int(input("gun olarak gırınız:"))
+
+if ((21<=dogum_gun) and (dogum_ayı==1)) or ((19>=dogum_gun)and (dogum_ayı==2)):
+    print("burcunuz kova")
+elif ((20<=dogum_gun) and (dogum_ayı==2)) or ((20>=dogum_gun)and (dogum_ayı==3)):
+    print("burcunuz balık")                    
+elif ((21<=dogum_gun) and (dogum_ayı==3)) or ((20>=dogum_gun)and (dogum_ayı==4)):
+    print("burcunuz koc")
+elif ((21<=dogum_gun) and (dogum_ayı==4)) or ((20>=dogum_gun)and (dogum_ayı==5)):
+    print("burcunuz boga")
+elif ((21<=dogum_gun) and (dogum_ayı==5)) or ((21>=dogum_gun)and (dogum_ayı==6)):
+    print("burcunuz ikizler")
+elif ((22<=dogum_gun) and (dogum_ayı==6)) or ((22>=dogum_gun)and (dogum_ayı==7)):
+    print("burcunuz yengec")
+elif ((23<=dogum_gun) and (dogum_ayı==7)) or ((23>=dogum_gun)and (dogum_ayı==8)):
+    print("burcunuz aslan")
+elif ((24<=dogum_gun) and (dogum_ayı==8)) or ((23>=dogum_gun)and (dogum_ayı==9)):
+    print("burcunuz basak")
+elif ((24<=dogum_gun) and (dogum_ayı==9)) or ((23>=dogum_gun)and (dogum_ayı==10)):
+    print("burcunuz terazi")
+elif ((24<=dogum_gun) and (dogum_ayı==10)) or ((22>=dogum_gun)and (dogum_ayı==11)):
+    print("burcunuz akrep")
+elif ((23<=dogum_gun) and (dogum_ayı==11)) or ((21>=dogum_gun)and (dogum_ayı==12)):
+    print("burcunuz yay")
+elif ((22<=dogum_gun) and (dogum_ayı==12)) or ((20>=dogum_gun)and (dogum_ayı==1)):
+    print("burcunuz oglak")
+
+else:
+    print("Bilgiler yanlıs grıldı","\n","tekrar deneyiniz")
+
+
+
+
+
+
+
+
+
+ 

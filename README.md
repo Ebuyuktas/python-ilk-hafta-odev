@@ -1,1 +1,1 @@
-# python-ilk-hafta-odev
+# python-odevler

@@ -1,0 +1,25 @@
+#km-mil,mil-km donusturme programı#
+
+
+print("""işlemler:
+1-km uzunlugunu mıle cevırme
+2-mil uzunlugunu kmye cevırme
+""")
+a=1
+while a==1:
+    cevap=input("yapmak istedıgınız ıslem numarasınızı gırınız(cıkmak ıcın q tusuna basınız):")       
+
+    if cevap=="q":
+                 print("cıkılıyor...")
+                 break
+    uzunluk=int(input("dönusturulecek uzunlugu gırınız:"))
+           
+    if cevap=="1":
+                mil=uzunluk/1.6
+                print("gırılen degerın mıl cınsınden karsılıgı:",mil)
+    elif cevap=="2":
+                km=uzunluk*1.6
+                print("gırılen degerın km cınsınden karsılıgı:",km)
+    else:
+                print("bılınmyen bır hata olustu","\n","lutfen tekrar deneyınız")
+    

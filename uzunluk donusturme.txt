@@ -4,6 +4,8 @@
 print("""işlemler:
 1-km uzunlugunu mıle cevırme
 2-mil uzunlugunu kmye cevırme
+
+***Rakam harici deger gırmeyınız***
 """)
 
 while True:

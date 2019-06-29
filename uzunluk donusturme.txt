@@ -5,8 +5,8 @@ print("""işlemler:
 1-km uzunlugunu mıle cevırme
 2-mil uzunlugunu kmye cevırme
 """)
-a=1
-while a==1:
+
+while True:
     cevap=input("yapmak istedıgınız ıslem numarasınızı gırınız(cıkmak ıcın q tusuna basınız):")       
 
     if cevap=="q":

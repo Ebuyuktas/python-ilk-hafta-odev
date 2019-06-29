@@ -12,13 +12,13 @@ while a==1:
     if cevap=="q":
                  print("cıkılıyor...")
                  break
-    uzunluk=int(input("dönusturulecek uzunlugu gırınız:"))
+    uzunluk=input("dönusturulecek uzunlugu gırınız:")
            
     if cevap=="1":
-                mil=uzunluk/1.6
+                mil=float(uzunluk)/1.6
                 print("gırılen degerın mıl cınsınden karsılıgı:",mil)
     elif cevap=="2":
-                km=uzunluk*1.6
+                km=float(uzunluk))*1.6
                 print("gırılen degerın km cınsınden karsılıgı:",km)
     else:
                 print("bılınmyen bır hata olustu","\n","lutfen tekrar deneyınız")

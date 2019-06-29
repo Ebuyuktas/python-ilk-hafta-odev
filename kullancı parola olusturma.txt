@@ -1,19 +1,19 @@
 #kurallara uygun username ve parola olusturma#
 
-print("""***lutfen rakam ıcermeyen ve 3-18 karakter uzunlugunda bır kullanıcı adı olusturun.
-***kullanıcı adını olusturduktan sonra 6-18 karakter uzunlugunda bır parola olusturunuz\n""")
+print("""***lutfen rakam Ä±cermeyen ve 3-18 karakter uzunlugunda bÄ±r kullanÄ±cÄ± adÄ± olusturun.
+***kullanÄ±cÄ± adÄ±nÄ± olusturduktan sonra 6-18 karakter uzunlugunda bÄ±r parola olusturunuz\n""")
 
-sayı=("0123456789")
+sayÄ±=("0123456789")
 
 
 while True:
-    username=input("kullanıcı adı olusturunuz:")
+    username=input("kullanÄ±cÄ± adÄ± olusturunuz:")
     if len(username)<3 or len(username)>18:
-        print("username 3-18 karakter arası olmalıdır")
+        print("username 3-18 karakter arasÄ± olmalÄ±dÄ±r")
         continue
     for a in username:
-        if a in sayı:
-            print("kullanıcı adı rakam ıceremez")
+        if a in sayÄ±:
+            print("kullanÄ±cÄ± adÄ± rakam Ä±ceremez")
             break
     else:
         break
@@ -21,7 +21,7 @@ while True:
 while True:
     parola=input("parola olusturunuz:")
     if 6>len(parola) or 18<len(parola):
-        print("parola uzunlugu 6-18 arası olmalıdır")
+        print("parola uzunlugu 6-18 arasÄ± olmalÄ±dÄ±r")
         continue
     else :
         break

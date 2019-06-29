@@ -18,7 +18,7 @@ while a==1:
                 mil=float(uzunluk)/1.6
                 print("gırılen degerın mıl cınsınden karsılıgı:",mil)
     elif cevap=="2":
-                km=float(uzunluk))*1.6
+                km=float(uzunluk)*1.6
                 print("gırılen degerın km cınsınden karsılıgı:",km)
     else:
                 print("bılınmyen bır hata olustu","\n","lutfen tekrar deneyınız")
